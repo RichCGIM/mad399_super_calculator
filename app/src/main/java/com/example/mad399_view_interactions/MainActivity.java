@@ -32,5 +32,17 @@ public class MainActivity extends AppCompatActivity {
                 answer.setText(String.valueOf(sum));
             }
         });
+
+        buttonSubtract.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double firstNumber = Double.parseDouble(firstInput.getText().toString());
+                double secondNumber = Double.parseDouble(secondInput.getText().toString());
+
+                double difference = firstNumber - secondNumber;
+
+                answer.setText(String.valueOf(difference));
+            }
+        });
     }
 }
