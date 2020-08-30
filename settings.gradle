@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "mad399_view_interactions"
